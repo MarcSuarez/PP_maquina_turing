@@ -5,7 +5,8 @@ Este programa demuestra el uso de la máquina de Turing para realizar
 operaciones matemáticas básicas.
 """
 
-from maquina_turing import MaquinaTuring
+from clases.maquina_turing import MaquinaTuring
+
 
 
 def mostrar_menu():

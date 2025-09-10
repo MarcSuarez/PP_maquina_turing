@@ -5,8 +5,8 @@ Esta clase coordina la cinta, la cabezera y las operaciones matemáticas
 para crear una máquina de Turing funcional.
 """
 
-from cinta import Cinta
-from cabezera import Cabezera
+from .cinta import Cinta
+from .cabezera import Cabezera
 from math import sqrt
 
 
