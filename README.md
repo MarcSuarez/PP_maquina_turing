@@ -63,8 +63,8 @@ resultado = tm.multiplicar(7, 6)  # 42
 
 ## Características
 
-- ✅ Implementación simple y clara
-- ✅ Separación de responsabilidades en clases
-- ✅ Operaciones matemáticas básicas
-- ✅ Manejo de errores (división por cero, etc.)
-- ✅ Visualización del estado de la cinta
+- Implementación simple y clara
+- Separación de responsabilidades en clases
+- Operaciones matemáticas básicas
+- Manejo de errores (división por cero, etc.)
+- Visualización del estado de la cinta

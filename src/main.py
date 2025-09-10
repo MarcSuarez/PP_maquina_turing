@@ -11,7 +11,7 @@ from maquina_turing import MaquinaTuring
 def mostrar_menu():
     """Muestra el menú de opciones."""
     print("\n" + "="*50)
-    print("🤖 MÁQUINA DE TURING - OPERACIONES MATEMÁTICAS")
+    print("MÁQUINA DE TURING - OPERACIONES MATEMÁTICAS")
     print("="*50)
     print("1. Suma")
     print("2. Resta")
@@ -41,7 +41,7 @@ def obtener_numero(mensaje):
             numero = int(input(mensaje))
             return numero
         except ValueError:
-            print("❌ Por favor, ingresa un número entero válido.")
+            print("Por favor, ingresa un número entero válido.")
 
 
 def ejecutar_operacion(tm, opcion):
@@ -56,44 +56,44 @@ def ejecutar_operacion(tm, opcion):
         a = obtener_numero("Ingresa el primer número: ")
         b = obtener_numero("Ingresa el segundo número: ")
         resultado = tm.sumar(a, b)
-        print(f"✅ Resultado: {a} + {b} = {resultado}")
+        print(f"Resultado: {a} + {b} = {resultado}")
         
     elif opcion == 2:  # Resta
         a = obtener_numero("Ingresa el primer número: ")
         b = obtener_numero("Ingresa el segundo número: ")
         resultado = tm.restar(a, b)
-        print(f"✅ Resultado: {a} - {b} = {resultado}")
+        print(f"Resultado: {a} - {b} = {resultado}")
         
     elif opcion == 3:  # Multiplicación
         a = obtener_numero("Ingresa el primer número: ")
         b = obtener_numero("Ingresa el segundo número: ")
         resultado = tm.multiplicar(a, b)
-        print(f"✅ Resultado: {a} * {b} = {resultado}")
+        print(f"Resultado: {a} * {b} = {resultado}")
         
     elif opcion == 4:  # División
         a = obtener_numero("Ingresa el dividendo: ")
         b = obtener_numero("Ingresa el divisor: ")
         resultado = tm.dividir(a, b)
         if isinstance(resultado, str):
-            print(f"❌ {resultado}")
+            print(f"{resultado}")
         else:
-            print(f"✅ Resultado: {a} / {b} = {resultado}")
+            print(f"Resultado: {a} / {b} = {resultado}")
             
     elif opcion == 5:  # Potenciación
         base = obtener_numero("Ingresa la base: ")
         exponente = obtener_numero("Ingresa el exponente: ")
         resultado = tm.potenciacion(base, exponente)
-        print(f"✅ Resultado: {base}^{exponente} = {resultado}")
+        print(f"Resultado: {base}^{exponente} = {resultado}")
         
     elif opcion == 6:  # Raíz cuadrada
         numero = obtener_numero("Ingresa el número: ")
         resultado = tm.raiz_cuadrada(numero)
-        print(f"✅ Resultado: √{numero} = {resultado}")
+        print(f"Resultado: √{numero} = {resultado}")
 
 
 def mostrar_estado(tm):
     """Muestra el estado actual de la máquina."""
-    print("\n📊 ESTADO DE LA MÁQUINA DE TURING:")
+    print("\nESTADO DE LA MÁQUINA DE TURING:")
     print("-" * 40)
     print(tm.mostrar_estado())
 
@@ -103,9 +103,9 @@ def mostrar_historial(tm):
     historial = tm.obtener_historial()
     
     if not historial:
-        print("\n📝 No hay operaciones en el historial.")
+        print("\nNo hay operaciones en el historial.")
     else:
-        print(f"\n📝 HISTORIAL DE OPERACIONES ({len(historial)} operaciones):")
+        print(f"\nHISTORIAL DE OPERACIONES ({len(historial)} operaciones):")
         print("-" * 50)
         for i, operacion in enumerate(historial, 1):
             print(f"{i:2d}. {operacion}")
@@ -113,12 +113,12 @@ def mostrar_historial(tm):
 
 def main():
     """Función principal del programa."""
-    print("🚀 Iniciando Máquina de Turing...")
+    print("Iniciando Máquina de Turing...")
     
     # Crear instancia de la máquina de Turing
     tm = MaquinaTuring()
     
-    print("✅ Máquina de Turing inicializada correctamente.")
+    print("Máquina de Turing inicializada correctamente.")
     
     while True:
         mostrar_menu()
@@ -127,7 +127,7 @@ def main():
             opcion = int(input("\nSelecciona una opción: "))
             
             if opcion == 0:
-                print("\n👋 ¡Hasta luego!")
+                print("\n¡Hasta luego!")
                 break
                 
             elif opcion in range(1, 7):
@@ -141,18 +141,18 @@ def main():
                 
             elif opcion == 9:
                 tm.reiniciar()
-                print("🔄 Máquina reiniciada correctamente.")
+                print("Máquina reiniciada correctamente.")
                 
             else:
-                print("❌ Opción no válida. Por favor, selecciona una opción del 0 al 9.")
+                print("Opción no válida. Por favor, selecciona una opción del 0 al 9.")
                 
         except ValueError:
-            print("❌ Por favor, ingresa un número válido.")
+            print("Por favor, ingresa un número válido.")
         except KeyboardInterrupt:
-            print("\n\n👋 ¡Hasta luego!")
+            print("\n\n¡Hasta luego!")
             break
         except Exception as e:
-            print(f"❌ Error inesperado: {e}")
+            print(f"Error inesperado: {e}")
         
         # Pausa antes de continuar
         input("\nPresiona Enter para continuar...")
@@ -160,7 +160,7 @@ def main():
 
 def ejecutar_ejemplos():
     """Ejecuta ejemplos de uso de la máquina de Turing."""
-    print("🧪 EJECUTANDO EJEMPLOS DE USO")
+    print("EJECUTANDO EJEMPLOS DE USO")
     print("=" * 40)
     
     tm = MaquinaTuring()
@@ -176,15 +176,15 @@ def ejecutar_ejemplos():
     ]
     
     for nombre, operacion in ejemplos:
-        print(f"\n🔹 {nombre}:")
+        print(f"\n{nombre}:")
         resultado = operacion()
         print(f"   Resultado: {resultado}")
         print(f"   Estado: {tm.obtener_estado()}")
         print(f"   Cinta: {tm.cinta.mostrar_cinta(tm.cabezera.obtener_posicion())}")
     
-    print(f"\n📝 Historial completo:")
+    print(f"\nHistorial completo:")
     for operacion in tm.obtener_historial():
-        print(f"   • {operacion}")
+        print(f" {operacion}")
 
 
 if __name__ == "__main__":
@@ -201,11 +201,11 @@ if __name__ == "__main__":
         elif modo == 2:
             ejecutar_ejemplos()
         else:
-            print("❌ Opción no válida. Ejecutando modo interactivo por defecto.")
+            print("Opción no válida. Ejecutando modo interactivo por defecto.")
             main()
             
     except ValueError:
-        print("❌ Entrada no válida. Ejecutando modo interactivo por defecto.")
+        print("Entrada no válida. Ejecutando modo interactivo por defecto.")
         main()
     except KeyboardInterrupt:
-        print("\n👋 ¡Hasta luego!")
+        print("\n¡Hasta luego!")
