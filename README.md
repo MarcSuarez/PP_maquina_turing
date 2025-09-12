@@ -9,12 +9,13 @@ Implementación simple de una máquina de Turing en Python para realizar operaci
 PP_maquina_turing/
 ├── README.md                        # Archivo principal de documentación
 ├── documentacion/
-│   └──imagenes.jpeg                   # Anexos visuales
+|   └── DOCUMENTACION.md            # Documentación extendida del proyecto
+│   |──imagenes.jpeg                   # Anexos visuales
 ├── src/
 │   ├── main.py                     # Programa principal (interfaz de usuario)
 │   └── clases/
 │       └── __pycache__/           # Archivos compilados (automáticos)
-        ├── cinta.py                    # Clase para manejar la cinta
+|       ├── cinta.py                    # Clase para manejar la cinta
 │       ├── cabezera.py                 # Clase para manejar la cabezera de lectura/escritura
 │       ├── maquina_turing.py          # Clase principal que coordina la máquina
 
