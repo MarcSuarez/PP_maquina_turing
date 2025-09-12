@@ -5,14 +5,18 @@ Implementación simple de una máquina de Turing en Python para realizar operaci
 
 ## Estructura del Proyecto
 
-```
-proyecto_primer_corte/
-├── README.md              # Este archivo
-├── maquina_turing.py      # Clase principal de la máquina de Turing
-├── cinta.py              # Clase para manejar la cinta
-├── cabezera.py           # Clase para manejar la cabezera de lectura/escritura
-├── operaciones.py        # Operaciones matemáticas (archivo existente)
-└── main.py               # Programa principal
+```plaintext
+PP_maquina_turing/
+├── README.md                        # Archivo principal de documentación
+├── documentacion/
+│   └── DOCUMENTACION.md            # Documentación extendida del proyecto
+├── src/
+│   ├── main.py                     # Programa principal (interfaz de usuario)
+│   ├── cinta.py                    # Clase para manejar la cinta
+│   ├── cabezera.py                 # Clase para manejar la cabezera de lectura/escritura
+│   ├── maquina_turing.py          # Clase principal que coordina la máquina
+│   └── clases/
+│       └── __pycache__/           # Archivos compilados (automáticos)
 ```
 
 ## Clases Principales
