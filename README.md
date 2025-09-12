@@ -12,11 +12,12 @@ PP_maquina_turing/
 │   └── DOCUMENTACION.md            # Documentación extendida del proyecto
 ├── src/
 │   ├── main.py                     # Programa principal (interfaz de usuario)
-│   ├── cinta.py                    # Clase para manejar la cinta
-│   ├── cabezera.py                 # Clase para manejar la cabezera de lectura/escritura
-│   ├── maquina_turing.py          # Clase principal que coordina la máquina
 │   └── clases/
 │       └── __pycache__/           # Archivos compilados (automáticos)
+        ├── cinta.py                    # Clase para manejar la cinta
+│       ├── cabezera.py                 # Clase para manejar la cabezera de lectura/escritura
+│       ├── maquina_turing.py          # Clase principal que coordina la máquina
+
 ```
 
 ## Clases Principales
