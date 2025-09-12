@@ -112,11 +112,23 @@ Este proyecto implementa una máquina de Turing en Python capaz de realizar oper
 ### Casos Básicos
 ```
 Suma: 3 + 5 = 8
+      -5 + 3 = -2
+      0 + 0 = 0
 Resta: 10 - 4 = 6
+      -5 - 5 = -10
+      0 - 0 = 0
 Multiplicación: 7 * 6 = 42
+               5 * (-5) = -25
+               5 * 0 = 0
 División: 20 / 4 = 5
+         10 / 0 = error
+         5 / 15 = 0.33
 Potenciación: 2^3 = 8
+              2^(-3) = 0.125
+              2^0 = 1  
 Raíz cuadrada: √16 = 4
+               √-16 = error
+               √0 = 0   
 ```
 
 ### Casos de Error
