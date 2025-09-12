@@ -6,6 +6,11 @@ Este proyecto implementa una máquina de Turing en Python capaz de realizar oper
 
 ## Arquitectura del Sistema
 
+A continuación se muestra el diagrama de clases de la máquina de Turing:
+
+![Diagrama de clases](imagenes/diagrama_clases.jpeg)
+
+
 ### Clases Principales
 
 #### 1. Clase `Cinta` (cinta.py)
