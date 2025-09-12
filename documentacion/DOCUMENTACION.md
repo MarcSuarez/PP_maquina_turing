@@ -108,7 +108,7 @@ Este proyecto implementa una máquina de Turing en Python capaz de realizar oper
 - **error**: Error durante la operación
 
 ## Casos de Prueba
-
+![Casos básicos](imagenes/casos_basicos.jpeg)
 ### Casos Básicos
 ```
 Suma: 3 + 5 = 8
