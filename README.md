@@ -9,7 +9,7 @@ Implementación simple de una máquina de Turing en Python para realizar operaci
 PP_maquina_turing/
 ├── README.md                        # Archivo principal de documentación
 ├── documentacion/
-│   └── DOCUMENTACION.md            # Documentación extendida del proyecto
+│   └──imagenes.jpeg                   # Anexos visuales
 ├── src/
 │   ├── main.py                     # Programa principal (interfaz de usuario)
 │   └── clases/
